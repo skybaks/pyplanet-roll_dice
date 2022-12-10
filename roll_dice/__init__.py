@@ -43,7 +43,7 @@ class RollDiceApp(AppConfig):
 		rolls = []	# type: list[str]
 		while len(rolls) < roll_count:
 			current_roll = random.randint(1, roll_max)
-			rolls.append(str(current_roll))
+			rolls.append(current_roll)
 			logger.debug('Rolled: ' + str(current_roll))
 		await self.instance.chat(f'$ff0$<$fff{player.nickname}$> rolls $<$fff{str(roll_count)}d{str(roll_max)}$>...')
-		await self.instance.chat(f'$ff0Result: $<$fff{", ".join(rolls)}$>')
+		await self.instance.chat(f'$ff0Dice: $<$fff{", ".join([str(r) for r in rolls])}$> Total: $<$fff{str(sum(rolls))}$>')
