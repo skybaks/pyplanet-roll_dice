@@ -4,3 +4,5 @@ __pycache__
 #virtaulenv
 env/
 venv/
+#build
+dist/
