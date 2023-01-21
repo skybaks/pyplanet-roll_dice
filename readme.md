@@ -4,6 +4,20 @@ A plugin for [PyPlanet](https://pypla.net/).
 
 This plugin allows you to simulate dice rolls.
 
+## Installation
+
+Install or update to the latest version with the following command
+
+```
+python -m pip install --upgrade pyplanet-roll_dice
+```
+
+Add the following to your pyplanet apps.py
+
+```
+'skybaks.roll_dice',
+```
+
 ## Commands
 
 |Command    |Description|
